@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d0b">
+  <meta name="description" content="RENEGADE DOOMER LAUNCHER: choose your arsenal, arrange addons, and double-click a map. Automatic base-WAD checks, mod-specific settings, screenshot tiles, and 28 themes.">
+  <title>RDL — RENEGADE DOOMER LAUNCHER</title>
+  <link rel="icon" href="assets/avatar.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="RDL home"><img src="assets/avatar.png" width="42" height="42" alt=""><span><strong>RDL<span class="brand-dot">_</span></strong><small>RENEGADE DOOMER LAUNCHER</small></span></a>
+    <nav aria-label="Main navigation"><a href="#preview">Screenshots</a><a href="#loadout">How it works</a><a class="nav-download" href="#download">Get RDL <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> WINDOWS LAUNCHER / PUBLIC PREVIEW</p>
+        <h1>MOD FIRST.<br>MAP NEXT.<br><span>DOOM.</span></h1>
+        <p class="hero-description">Choose your TC or weapons mod. Stack your addons. Double-click a map. RDL checks which base WAD it needs before you jump in.</p>
+        <div class="hero-actions"><a class="button primary" href="#download">Download RDL <span aria-hidden="true">↓</span></a><a class="text-link" href="#preview">Explore the launcher <span aria-hidden="true">→</span></a></div>
+        <ul class="hero-tags" aria-label="At a glance"><li>28 themes</li><li>Drag &amp; drop addons</li><li>Your map collection</li></ul>
+      </div>
+      <div class="hero-visual">
+        <div class="frame-label"><span>RDL / HELLFIRE</span><span>INTERFACE PREVIEW</span></div>
+        <button class="screenshot-button hero-shot" data-enlarge="assets/hellfire-compact.png" data-caption="Hellfire — compact launcher interface" aria-label="Enlarge the Hellfire launcher screenshot"><img src="assets/hellfire-compact.png" width="900" height="580" alt="RDL's compact Hellfire interface, with the arsenal selector above the map gallery and addons area."></button>
+        <div class="image-caption"><span class="accent-mark" aria-hidden="true">+</span> Your arsenal. Your addons. Your next map.</div>
+      </div>
+    </section>
+
+    <section class="workflow wrap" id="loadout" aria-labelledby="workflow-title">
+      <div class="section-heading"><p class="eyebrow">01 / BUILD THE LOADOUT</p><h2 id="workflow-title">A launcher that follows how you play.</h2></div>
+      <ol class="steps">
+        <li><span class="step-number">01</span><h3>Pick your arsenal</h3><p>Choose a total conversion or weapons mod. Import a profile from your BAT collection or add mod files yourself.</p></li>
+        <li><span class="step-number">02</span><h3>Stack your addons</h3><p>Drag files into the addons area. Move them up or down to control the order in which they load.</p></li>
+        <li><span class="step-number">03</span><h3>Choose your map</h3><p>Point RDL at your Maps folder. Browse screenshot tiles, search your collection, and adjust tile size.</p></li>
+        <li><span class="step-number">04</span><h3>Double-click. Play.</h3><p>The map drives base-WAD selection. Clear requirements are automatic; ambiguous packs ask you to choose once.</p></li>
+      </ol>
+    </section>
+
+    <section class="preview-section" id="preview" aria-labelledby="preview-title">
+      <div class="wrap">
+        <div class="preview-heading"><div><p class="eyebrow">02 / MAKE IT YOURS</p><h2 id="preview-title">More attitude.<br>Same simple workflow.</h2></div><p>28 coordinated palettes. From black and crimson to neon green and pink. Explore eight of them below.</p></div>
+        <div class="theme-picker" role="group" aria-label="Screenshot theme">
+          <button class="theme-option selected" data-theme="Cyberpunk" data-file="cyberpunk" data-color="#7cff00" aria-pressed="true"><span style="--swatch:#7cff00"></span>Cyberpunk</button>
+          <button class="theme-option" data-theme="Blood Moon" data-file="blood-moon" data-color="#ff625a" aria-pressed="false"><span style="--swatch:#ff625a"></span>Blood Moon</button>
+          <button class="theme-option" data-theme="Hellfire" data-file="hellfire" data-color="#ffad25" aria-pressed="false"><span style="--swatch:#ffad25"></span>Hellfire</button>
+          <button class="theme-option" data-theme="Desert Dust" data-file="desert-dust" data-color="#e4cb9a" aria-pressed="false"><span style="--swatch:#e4cb9a"></span>Desert Dust</button>
+          <button class="theme-option" data-theme="Doom 64" data-file="doom-64" data-color="#b6f36a" aria-pressed="false"><span style="--swatch:#b6f36a"></span>Doom 64</button>
+          <button class="theme-option" data-theme="Synthwave" data-file="synthwave" data-color="#ff89ed" aria-pressed="false"><span style="--swatch:#ff89ed"></span>Synthwave</button>
+          <button class="theme-option" data-theme="Vaporwave" data-file="vaporwave" data-color="#ebcde6" aria-pressed="false"><span style="--swatch:#ebcde6"></span>Vaporwave</button>
+          <button class="theme-option" data-theme="High Contrast" data-file="high-contrast" data-color="#ffff00" aria-pressed="false"><span style="--swatch:#ffff00"></span>High Contrast</button>
+        </div>
+        <div class="preview-frame">
+          <div class="frame-label"><span id="theme-label" aria-live="polite">CYBERPUNK / NEON GREEN + PINK + YELLOW</span><span>CLICK IMAGE TO ENLARGE <span aria-hidden="true">↗</span></span></div>
+          <button id="theme-preview" class="screenshot-button" data-enlarge="assets/cyberpunk.png" data-caption="Cyberpunk — launcher interface preview" aria-label="Enlarge the Cyberpunk launcher screenshot"><img id="theme-image" src="assets/cyberpunk.png" width="1160" height="780" loading="lazy" alt="Cyberpunk theme in RDL, with neon green headings, pink and yellow accents, a map gallery and addon controls."></button>
+        </div>
+        <p class="preview-note">Screenshots show the actual launcher rendered with example map names. Your collection and assigned images fill the tiles; games and map packs are not included.</p>
+        <details class="all-themes"><summary>See all 28 themes <span aria-hidden="true">+</span></summary><p>Renegade · UAC Steel · Hellfire · Toxic Waste · Phobos · Night Ops · Cyberpunk · Synthwave · Arctic · Abyss · Royal · Blood Moon · Desert Dust · Classic Doom · Paper · Solarized · Frost · High Contrast · Doom 64 · Mars · Slime Factory · Cacodemon · Revenant · BFG · Ultramarine · Quake · Midnight · Vaporwave</p></details>
+      </div>
+    </section>
+
+    <section class="details-section wrap" aria-labelledby="details-title">
+      <div class="section-heading"><p class="eyebrow">03 / LESS FRICTION</p><h2 id="details-title">Keep the setup.<br>Change the battlefield.</h2></div>
+      <div class="feature-grid">
+        <article><span class="feature-kicker">WAD: AUTO</span><h3>Requirements come first.</h3><p>RDL reads map metadata and existing BAT hints. It supports Doom, Doom II, TNT and Plutonia. A missing TNT or Plutonia IWAD is never quietly replaced with Doom II.</p></article>
+        <article><span class="feature-kicker">PER-MOD SETTINGS</span><h3>Your config follows your arsenal.</h3><p>In-game settings save to a config for the TC or weapons mod, rather than changing for every map, WAD or addon. Import an existing INI when you need your own setup.</p></article>
+        <article><span class="feature-kicker">SAVE SETUP</span><h3>Keep the combination.</h3><p>Remember the chosen mod, map, addon order and selected INI. Return to a saved setup without assembling the loadout again.</p></article>
+        <article><span class="feature-kicker">MAP SCREENSHOTS</span><h3>Find the picture inside RDL.</h3><p>Search for previews from DoomWiki and Doom forums, select one, and apply it. RDL preserves the source link and uses cached search previews when an image host blocks downloads.</p></article>
+      </div>
+    </section>
+
+    <section class="download-section wrap" id="download" aria-labelledby="download-title">
+      <div><p class="eyebrow">04 / READY WHEN YOU ARE</p><h2 id="download-title">Take your collection<br>for a spin.</h2><p class="download-description">Windows x64 · .NET Framework 4.8 · Public preview v0.1.0-preview</p><p class="download-description">Portable ZIP. No launcher account required. Bring your own Doom engine, legally owned base WADs, maps and mods.</p>
+      <a class="button primary download-link" href="https://github.com/RENEGADE-ANDROiD/rdl/releases/download/v0.1.0-preview/RDL-Windows-x64.zip">Download for Windows <span aria-hidden="true">↓</span></a>
+      <p class="download-links"><a href="https://github.com/RENEGADE-ANDROiD/rdl/releases/tag/v0.1.0-preview">Release notes</a><a href="https://github.com/RENEGADE-ANDROiD/rdl/releases/download/v0.1.0-preview/SHA256SUMS.txt">Checksums</a><a href="https://github.com/RENEGADE-ANDROiD/rdl/issues">Report an issue</a></p></div>
+      <div class="setup-panel"><h3>First launch</h3><ol><li>Extract the ZIP into a writable folder, then open <strong>RDL.exe</strong>.</li><li>Set <strong>Game</strong> to your engine and BAT collection; set <strong>Maps</strong> to your map folder.</li><li>Choose your engine, arsenal and addons. Double-click a map.</li></ol><p>This is a preview build. Not every scripted map and gameplay mod can be combined; RDL prompts when it detects conflicts. Engine launch behavior still needs wider player testing.</p></div>
+    </section>
+  </main>
+  <footer class="wrap"><div class="footer-brand">RDL <span>/</span> RENEGADE ANDROiD</div><p>Doom and related trademarks belong to their respective owners. No games, engines, WADs or mods are bundled.</p><a href="https://github.com/RENEGADE-ANDROiD/rdl">Website &amp; downloads on GitHub <span aria-hidden="true">↗</span></a></footer>
+  <dialog id="image-dialog" aria-labelledby="dialog-caption"><div class="dialog-top"><p id="dialog-caption">Launcher screenshot</p><button id="close-dialog" aria-label="Close screenshot">Close <span aria-hidden="true">×</span></button></div><img id="dialog-image" alt="Enlarged launcher interface screenshot"></dialog>
+</body>
+</html>

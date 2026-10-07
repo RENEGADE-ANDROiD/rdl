@@ -1,0 +1,11 @@
+# Public website only. Launcher source, local tools and build outputs stay local.
+/*
+!/.gitignore
+!/.nojekyll
+!/README.md
+!/index.html
+!/styles.css
+!/site.js
+!/assets/
+/assets/*
+!/assets/*.png
