@@ -9,6 +9,8 @@ const descriptions = {
   Vaporwave: 'PASTEL PINK + TEAL',
   'High Contrast': 'BLACK + WHITE + YELLOW'
 };
+let themePlaying = false;
+const stopThemeAnimation = () => {if (!themePlaying) return; themePlaying = false; document.querySelector('#theme-stop').hidden = true; document.querySelector('#theme-play').hidden = false; document.querySelector('[data-theme].selected').click();};
 const image = document.querySelector('#theme-image');
 const preview = document.querySelector('#theme-preview');
 const label = document.querySelector('#theme-label');
@@ -18,6 +20,7 @@ for (const button of document.querySelectorAll('[data-theme]')) {
       option.classList.toggle('selected', option === button);
       option.setAttribute('aria-pressed', String(option === button));
     }
+    stopThemeAnimation();
     const {theme, file, color} = button.dataset;
     const path = `assets/${file}.png`;
     image.src = path;
@@ -44,3 +47,6 @@ for (const button of document.querySelectorAll('[data-enlarge]')) {
 document.querySelector('#close-dialog').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => {if (event.target === dialog) dialog.close();});
 dialog.addEventListener('close', () => {if (lastTrigger) lastTrigger.focus();});
+
+document.querySelector('#theme-play').addEventListener('click', () => {themePlaying = true; image.src = 'assets/rdl-themes.gif'; image.alt = 'All 28 RDL themes in a cursor-free looping showcase'; preview.dataset.enlarge = 'assets/rdl-themes.gif'; preview.dataset.caption = 'RDL — all 28 themes'; label.textContent = 'ALL 28 THEMES / ANIMATED SHOWCASE'; document.querySelector('#theme-play').hidden = true; document.querySelector('#theme-stop').hidden = false;});
+document.querySelector('#theme-stop').addEventListener('click', stopThemeAnimation);

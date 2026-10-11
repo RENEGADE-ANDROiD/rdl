@@ -6,7 +6,7 @@ This repository contains the RENEGADE DOOMER LAUNCHER landing page, interface sc
 
 GitHub Pages serves the static files from the root of `main`. `.nojekyll` keeps the site buildless. All asset paths are relative so the project site works under `/rdl/`.
 
-The screenshots are native renders of the launcher with example map names, rather than captures of a user's personal game files. They are labelled as interface previews on the page.
+The screenshots are cursor-free native WPF renders of the v0.1.3-preview executable, showing a real cached map collection. Settings images use isolated example choices and do not alter live settings. The 1920 x 1080 GIF cycles all 28 themes; website controls allow starting and stopping it.
 
 Release assets contain only the Windows executable, user instructions and release metadata. Bring your own compatible Doom engine and legally owned WADs.
 
